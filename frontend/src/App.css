@@ -1,0 +1,23 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(63,73,204,0.7);
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #d6dee1;
+}
