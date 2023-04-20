@@ -7,7 +7,7 @@ const navigate=useNavigate();
 const joinRoom=()=>{
     if(room!==" " && userName!==" ")
     {
-        socket.emit('Join Room',{userName,room});
+        socket.emit('Join_Room',{userName,room});
     }
     navigate('/chat',{replace:true});
 }
@@ -27,7 +27,7 @@ return (
             <option value="Java">Java</option>
             <option value="python">Python</option>
           </select>
-          <button className="btnSecondary" onClick={joinRoom}>join Room</button>
+          <button className="btnSecondary" onClick={joinRoom}>Join Room</button>
         </div>
       </div>
     </>

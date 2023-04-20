@@ -7,7 +7,8 @@ import { useState } from "react";
 const socket = io.connect("http://localhost:5000"); //add the server host address
 function App() {
   const [userName, setUserName] = useState("");
-  const [room, setRoom] = useState("");
+  const [room, setRoom] = useState("Javascript");
+
   return (
     <Router>
       <Routes>
@@ -29,6 +30,7 @@ function App() {
         />
       </Routes>
     </Router>
+ 
   );
 }
 
